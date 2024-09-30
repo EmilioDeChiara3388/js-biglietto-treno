@@ -22,17 +22,13 @@ console.log(age);
 if (age <= 17){
     discount = price - (price / 100 * 80);
     finalPrice = price - discount;
-    console.log("Il prezzo finale del tuo biglietto è " + finalPrice.toFixed(2));
-    alert("Il prezzo finale del tuo biglietto è " + finalPrice.toFixed(2));
 } else if (age >= 65){
     discount = price - (price / 100 * 60);
     finalPrice = price - discount;
-    console.log("Il prezzo finale del tuo biglietto è " + finalPrice.toFixed(2));
-    alert("Il prezzo finale del tuo biglietto è " + finalPrice.toFixed(2));
 } else {
     discount = 0;
     finalPrice = price
-    console.log("Il prezzo finale del tuo biglietto è " + finalPrice.toFixed(2));
-    alert("Il prezzo finale del tuo biglietto è " + finalPrice.toFixed(2));
 }
+console.log("Il prezzo finale del tuo biglietto è " + finalPrice.toFixed(2));
+    alert("Il prezzo finale del tuo biglietto è " + finalPrice.toFixed(2));
 
