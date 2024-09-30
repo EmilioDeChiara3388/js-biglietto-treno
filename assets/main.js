@@ -17,7 +17,7 @@ console.log(price);
 console.log(age);
 
 //Elaborazione Codice
-if (age <= 17){
+if (age < 18){
     discount = price - (price / 100 * 80);
     finalPrice = price - discount;
 } else if (age >= 65){
