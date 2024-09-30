@@ -6,17 +6,29 @@ va applicato uno sconto del 40% per gli over 65.
 L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca. */
 
 // Creazione variabili
-let age;
-let km;
+let km = Number(prompt("Inserisci chilometri del tu percorso"));
+let age = Number(prompt("Inserisci età del passeggero"));
+let price = km * 0.21;
 let discount;
-let price;
 let finalPrice;
 
 //Raccolta dati
-age = prompt("Inserisci età passeggero");
-console.log(age);
-km = prompt("Inserisci chilometri del percorso");
 console.log(km);
+console.log(price);
+console.log(age);
+
 
 //Elaborazione Codice
+if (age <= 17){
+    discount = price - (price / 100 * 80);
+    finalPrice = price - discount;
+    console.log("Il prezzo finale del tuo biglietto è " + finalPrice);
+} else if (age >= 65){
+    discount = price - (price / 100 * 60);
+    finalPrice = price - discount;
+    console.log("Il prezzo finale del tuo biglietto è " + finalPrice);
+} else {
+    discount = 0;
+    console.log("Il prezzo finale del tuo biglietto è " + finalPrice);
+}
 
