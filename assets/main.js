@@ -11,3 +11,8 @@ let km;
 let discount;
 let finalPrice;
 
+//Raccolta dati
+age = prompt("Inserisci età passeggero");
+console.log(age);
+km = prompt("Inserisci chilometri del percorso");
+console.log(km);
