@@ -5,18 +5,16 @@ va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65.
 L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca. */
 
-// Creazione variabili
-let km = Number(prompt("Inserisci chilometri del tu percorso"));
+// Creazione variabili e Raccolta Dati
+let km = Number(prompt("Inserisci chilometri da percorrere"));
 let age = Number(prompt("Inserisci età del passeggero"));
 let price = km * 0.21;
 let discount;
 let finalPrice;
 
-//Raccolta dati
 console.log(km);
 console.log(price);
 console.log(age);
-
 
 //Elaborazione Codice
 if (age <= 17){
