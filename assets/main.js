@@ -25,7 +25,7 @@ if (age <= 17){
     finalPrice = price - discount;
 } else {
     discount = 0;
-    finalPrice = price
+    finalPrice = price;
 }
 console.log("Il prezzo finale del tuo biglietto è " + finalPrice.toFixed(2));
     alert("Il prezzo finale del tuo biglietto è " + finalPrice.toFixed(2));
